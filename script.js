@@ -4,7 +4,7 @@ function toggleFile(path) {
 
 function readTextFile(file)
 {
-    file = "https://went-corporated.github.io/shymedhve/pagina/" + file + ".html";
+    file = "https://went-corporated.github.io/lecteur-de-fichiers/pagina/" + file + ".html";
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()
