@@ -72,6 +72,7 @@ body{
 .menu-bar>.file>.file-name{
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-family: 'Source Sans Pro';
 }
 
 .ui-standard{
@@ -152,13 +153,11 @@ body{
 
 .ui-standard>.center>.text-container>.legend{
     margin: 0; padding: 0;
-    margin-top: 15px;
-    font-family: 'Source Serif Pro';
-    text-align: justify;
-    hyphens: auto;
+    margin-top: 40px;
+    font-family: 'Source Sans Pro';
+    text-align: right;
     font-size: 16px;
     line-height: 22px;
-    text-indent: 19px;
 }
 
 @media screen and (max-width: 1150px){
