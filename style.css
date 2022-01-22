@@ -110,7 +110,7 @@ body{
     text-align: center;
     margin-top: 75px;
     margin-bottom: 60px;
-    width: 100% !important;
+    width: 1000px !important;
 }
 
 .ui-standard>.center>.inetlllothüshune{
@@ -140,6 +140,17 @@ body{
 }
 
 .ui-standard>.center>.text-container>.paragraphe{
+    margin: 0; padding: 0;
+    margin-top: 15px;
+    font-family: 'Source Serif Pro';
+    text-align: justify;
+    hyphens: auto;
+    font-size: 16px;
+    line-height: 22px;
+    text-indent: 19px;
+}
+
+.ui-standard>.center>.text-container>.legend{
     margin: 0; padding: 0;
     margin-top: 15px;
     font-family: 'Source Serif Pro';
