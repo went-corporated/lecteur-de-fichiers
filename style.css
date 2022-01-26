@@ -163,6 +163,20 @@ body{
     line-height: 22px;
 }
 
+@media screen and (max-width: 1350px){
+    .ui-standard>.center>.title{
+        font-size: 37.5px;
+        width: 900px !important;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .ui-standard>.center>.title{
+        font-size: 32.5px;
+        width: 750px !important;
+    }
+}
+
 @media screen and (max-width: 1150px){
     .ui-standard>.center>*{
         width: 600px !important;
