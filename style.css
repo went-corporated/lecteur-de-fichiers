@@ -64,21 +64,15 @@ body{
     display: flex;
     align-items: center;
     cursor: pointer;
-    border-right: blueviolet 0 solid;
     transition: .3s;
 }
 .menu-bar>.file:hover{
-    /* background-color: rgba(0, 0, 0, .035); */
-    border-right: blueviolet 2px solid;
-    padding: 0;
-}
-.menu-bar>.file:hover>.file-name{
-    text-overflow: clip;
+    background-color: rgba(0, 0, 0, .035);
     transition: 0s;
 }
 .menu-bar>.file:active{
-    /* background-color: rgba(0, 0, 0, .1); */
-    border-right: blueviolet 252px solid;
+    background-color: rgba(0, 0, 0, .1);
+    transition: 0s;
 }
 
 .menu-bar>.file>.file-name{
