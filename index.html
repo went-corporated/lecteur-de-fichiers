@@ -13,8 +13,8 @@
     <div class="ui-controller">
         <div class="menu-bar">
 
-            <div class="file" onclick="readTextFile('decret-un---nouvelle-birmanie');" title="Décret 1 - Nouvelle Birmanie">
-                <p class="file-name">Décret 1 - Nouvelle Birmanie</p>
+            <div class="file" onclick="readTextFile('premiere-declaration-de-la-crdd');" title="Première déclaration de la C.R.D.D.">
+                <p class="file-name">Première déclaration de la C.R.D.D.</p>
             </div>
 
             <div class="file" onclick="readTextFile('plan-officiel-de-lancement-du-systeme-economique-de-la-nouvelle-birmanie');" title="Plan officiel de lancement du système économique de la Nouvelle Birmanie">
@@ -37,12 +37,14 @@
             </div>
         </div>
 
+        <div class="mask"></div>
+
         <div class="settings-modal">
             <p class="title">Paramètres</p>
             <div class="settings-bar">
                 <p class="settingsbar-title">Changer de thème</p>
-                <div class="settingsbar-toggle-area">
-                    <div class="settingsbar-togglearea-checkbtn"></div>
+                <div class="settingsbar-toggle-area" onclick="toggleSetting('theme');">
+                    <div class="settingsbar-togglearea-checkbtn" id="sb_ta_cb_theme"></div>
                 </div>
             </div>
         </div>
