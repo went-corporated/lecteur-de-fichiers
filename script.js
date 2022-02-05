@@ -23,18 +23,18 @@ function readTextFile(file)
 
 // readTextFile('l-europe-entre-restauration-et-revolution');
 
-let toggleSettingThemeIncator = false;
+// let toggleSettingThemeIncator = false;
 
-function toggleSetting(settingName) {
-    if (settingName === "theme") {
-        if (toggleSettingThemeIncator === false) {
-            document.getElementById('sb_ta_cb_theme').style.transform = 'translateX(35px)';
-            document.getElementById('sb_ta_cb_theme').style.backgroundColor = 'white';
-            toggleSettingThemeIncator = true;
-        } else {
-            document.getElementById('sb_ta_cb_theme').style.transform = 'translateX(0px)';
-            document.getElementById('sb_ta_cb_theme').style.backgroundColor = 'rgb(230, 230, 230)';
-            toggleSettingThemeIncator = false;
-        }
-    }
-}
+// function toggleSetting(settingName) {
+//     if (settingName === "theme") {
+//         if (toggleSettingThemeIncator === false) {
+//             document.getElementById('sb_ta_cb_theme').style.transform = 'translateX(35px)';
+//             document.getElementById('sb_ta_cb_theme').style.backgroundColor = 'white';
+//             toggleSettingThemeIncator = true;
+//         } else {
+//             document.getElementById('sb_ta_cb_theme').style.transform = 'translateX(0px)';
+//             document.getElementById('sb_ta_cb_theme').style.backgroundColor = 'rgb(230, 230, 230)';
+//             toggleSettingThemeIncator = false;
+//         }
+//     }
+// }
