@@ -96,11 +96,44 @@ body{
 
 .btn-btnbar{
     height: 35px; width: 35px;
-    padding: 0; margin: 0;
+    margin: 0; padding: 0;
     /* margin-left: auto; margin-right: auto; */
     display: flex;
     align-items: center; justify-content: center;
     cursor: pointer;
+}
+.btn-btnbar::after{
+    content: 'Paramètres';
+    position: fixed;
+    width: max-content;
+    height: max-content;
+    margin: 0; padding: 0;
+    padding-top: 7.5px; padding-bottom: 7.5px;
+    padding-left: 12.5px; padding-right: 12.5px;
+    transform: translateY(-40px) translateX(40px);
+    background-color: rgb(174, 95, 248);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);
+    pointer-events: none;
+    opacity: 0;
+    animation: btnBtnbarClose 10s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes btnBtnbarClose{
+    from{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
 }
 
 .btn-btnbar>svg{
