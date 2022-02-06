@@ -95,17 +95,16 @@ body{
 }
 
 .btn-btnbar{
-    height: 100%;
-    width: auto;
-    margin: 0;
-    margin-left: auto; margin-right: auto;
-    padding: 0;
+    height: 35px; width: 35px;
+    padding: 0; margin: 0;
+    /* margin-left: auto; margin-right: auto; */
     display: flex;
     align-items: center; justify-content: center;
+    cursor: pointer;
 }
 
 .btn-btnbar>svg{
-    height: 100%; width: 100%;
+    height: 90%; width: 90%;
     margin: 0; padding: 0;
     pointer-events: none;
 }
@@ -203,15 +202,16 @@ body{
 .settings-modal{
     position: fixed;
     height: 500px;
-    width: 500px;
+    width: 450px;
     margin: 0; padding: 0;
     top: calc(50% - 250px); left: calc(50% - 250px);
-    background-color: rgba(245, 245, 245, .9);
+    background-color: rgb(251, 251, 251);
     backdrop-filter: blur(4px);
     border: 2px solid rgb(240, 240, 240);
     border-radius: 8px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .035);
     z-index: 1000;
+    display: none;
 }
 
 .settings-modal>.title{
@@ -238,7 +238,7 @@ body{
 
 .settings-modal>.settings-bar>.settingsbar-toggle-area{
     margin: 0; padding: 0;
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(225, 225, 225);
     height: 25px;
     width: 80px;
     border-radius: 17.5px;
@@ -250,7 +250,7 @@ body{
 
 .settings-modal>.settings-bar>.settingsbar-toggle-area>.settingsbar-togglearea-checkbtn{
     margin: 0; padding: 0;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(245, 245, 245);
     height: 20px;
     width: 40px;
     border-radius: 17.5px;
@@ -263,6 +263,11 @@ body{
     top: 0; left: 0;
     width: 100%; height: 100%;
     margin: 0; padding: 0;
+    background-color: rgba(0, 0, 0, .05);
+    backdrop-filter: blur(20px);
+    z-index: 900;
+    cursor: pointer;
+    display: none;
 }
 
 @media screen and (max-width: 1350px){
