@@ -126,17 +126,25 @@ body{
     z-index: 5;
 }
 
-#pop{
-    color: burlywood;
-    font-size: 50px;
-    font-family: 'Source Sans Pro SemiBold';
-    width: 100%;
-    height: 100px;
+.new-box{
+    width: 800px;
+    height: max-content;
     margin: 0; padding: 0;
-    background: linear-gradient(rgb(230, 230, 230), white);
-    text-align: center;
-    display: flex;
-    align-items: center; justify-content: center;
+    margin-top: 25px;
+    margin-left: auto; margin-right: auto;
+    background-color: rgb(240, 240, 240);
+    border-radius: 4px;
+    /* border: 1px dashed red; */
+}
+
+.new-box>.title{
+    margin: 0; padding: 0;
+    margin-top: 15px; margin-bottom: 15px;
+    font-family: 'Source Sans Pro SemiBold';
+    text-align: left;
+    font-size: 25px;
+    text-indent: 22.5px;
+    color: black;
 }
 
 .ui-standard>.center{
@@ -160,8 +168,8 @@ body{
     font-family: 'Source Sans Pro Black';
     font-size: 40px;
     text-align: center;
-    margin-top: 75px;
-    margin-bottom: 60px;
+    margin-top: 65px;
+    margin-bottom: 50px;
     width: 1000px !important;
 }
 

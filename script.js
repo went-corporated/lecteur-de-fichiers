@@ -1,4 +1,9 @@
+let firstClick = false;
+
 function toggleFile(path) {
+    if (firstClick === true) {
+        document.querySelector('.new-box').style.display = 'none';
+    }
     document.querySelector('.ui-standard>.center').innerHTML = path;
 }
 
@@ -50,3 +55,4 @@ document.querySelector('.mask').onclick = function () {
 }
 
 readTextFile('premiere-declaration-de-la-crrd');
+firstClick = true;
