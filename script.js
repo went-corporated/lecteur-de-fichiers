@@ -48,3 +48,5 @@ document.querySelector('.mask').onclick = function () {
     document.querySelector('.mask').style.display = 'none';
     document.querySelector('.settings-modal').style.display = 'none';
 }
+
+readTextFile('premiere-declaration-de-la-crrd');
