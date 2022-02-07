@@ -214,6 +214,7 @@ body{
     font-size: 16px;
     line-height: 22px;
     font-style: italic;
+    text-indent: 19px;
 }
 
 .ui-standard>.center>.text-container{

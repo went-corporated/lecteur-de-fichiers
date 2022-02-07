@@ -54,5 +54,5 @@ document.querySelector('.mask').onclick = function () {
     document.querySelector('.settings-modal').style.display = 'none';
 }
 
-readTextFile('premiere-declaration-de-la-crrd');
+readTextFile('plan-officiel-de-lancement-du-systeme-economique-de-la-nouvelle-birmanie');
 firstClick = true;
