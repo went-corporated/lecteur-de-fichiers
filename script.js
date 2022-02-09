@@ -1,30 +1,30 @@
-let firstClick = false;
+// let firstClick = false;
 
-function toggleFile(path) {
-    if (firstClick === true) {
-        document.querySelector('.new-box').style.display = 'none';
-    }
-    document.querySelector('.ui-standard>.center').innerHTML = path;
-}
+// function toggleFile(path) {
+//     if (firstClick === true) {
+//         document.querySelector('.new-box').style.display = 'none';
+//     }
+//     document.querySelector('.ui-standard>.center').innerHTML = path;
+// }
 
-function readTextFile(file)
-{
-    file = "https://went-corporated.github.io/lecteur-de-fichiers/pagina/" + file + ".html";
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                toggleFile(allText);
-            }
-        }
-    }
-    rawFile.send(null);
-}
+// function readTextFile(file)
+// {
+//     file = "https://went-corporated.github.io/lecteur-de-fichiers/pagina/" + file + ".html";
+//     var rawFile = new XMLHttpRequest();
+//     rawFile.open("GET", file, false);
+//     rawFile.onreadystatechange = function ()
+//     {
+//         if(rawFile.readyState === 4)
+//         {
+//             if(rawFile.status === 200 || rawFile.status == 0)
+//             {
+//                 var allText = rawFile.responseText;
+//                 toggleFile(allText);
+//             }
+//         }
+//     }
+//     rawFile.send(null);
+// }
 
 // readTextFile('l-europe-entre-restauration-et-revolution');
 
@@ -54,5 +54,5 @@ document.querySelector('.mask').onclick = function () {
     document.querySelector('.settings-modal').style.display = 'none';
 }
 
-readTextFile('plan-officiel-de-lancement-du-systeme-economique-de-la-nouvelle-birmanie');
-firstClick = true;
+// readTextFile('plan-officiel-de-lancement-du-systeme-economique-de-la-nouvelle-birmanie');
+// firstClick = true;
