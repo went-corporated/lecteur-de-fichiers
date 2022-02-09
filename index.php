@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acöhnme · Shymedhve</title>
+    <?php require '../component/open-graph.html'; ?>
     <meta property="og:title" content="Acöhnme - Le lecteur de fichiers moderne">
     <meta property="og:description" content="Découvrez ou redécouvrez notre bibliothèque de fichiers">
-    <meta name="description" content="Découvrez ou redécouvrez notre bibliothèque de fichiers">
+    <meta name="description" content="Découvrez ou redécouvrez notre bibliothèque de fichiers.">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reset.css">
 </head>
