@@ -259,7 +259,7 @@ body{
     height: 500px;
     width: 450px;
     margin: 0; padding: 0;
-    top: calc(50% - 250px); left: calc(50% - 250px);
+    top: calc(50% - 250px); left: calc(50% - 225px);
     background-color: rgb(251, 251, 251);
     backdrop-filter: blur(4px);
     border: 2px solid rgb(240, 240, 240);
