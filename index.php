@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acöhnme · Shymedhve</title>
-    <?php require '../component/open-graph.html'; ?>
+    <?php require './component/open-graph.html'; ?>
     <meta property="og:title" content="Acöhnme - Le lecteur de fichiers moderne">
+    <meta property="og:image" content="https://play-lh.googleusercontent.com/7hAq25yPmjdVuPeEpC8DQnHGsgo-BuNXhRVlSt0IYOXpKj8puu0PCDFsZHlJWkdN8kU">
     <meta property="og:description" content="Découvrez ou redécouvrez notre bibliothèque de fichiers">
     <meta name="description" content="Découvrez ou redécouvrez notre bibliothèque de fichiers.">
     <link rel="stylesheet" href="./style.css">
@@ -32,5 +33,9 @@
     </div>
 
     <script src="./script.js"></script>
+    <script>
+        indexPhpPath = './index.php';
+        polsenbPhpPath = './page/polsenb.php';
+    </script>
 </body>
 </html>

@@ -325,29 +325,19 @@ body{
     display: none;
 }
 
-@media screen and (max-width: 1350px){
-    .ui-standard>.center>.title{
-        font-size: 37.5px;
-        width: 900px !important;
+@media screen and (max-width: 900px){
+    .menu-bar{
+        display: none;
     }
-}
-
-@media screen and (max-width: 1250px){
-    .ui-standard>.center>.title{
-        font-size: 32.5px;
-        width: 750px !important;
+    .ui-standard{
+        left: 0;
+        width: 100%;
+        padding-left: 5px; padding-right: 5px;
     }
-}
-
-@media screen and (max-width: 1150px){
     .ui-standard>.center>*{
-        width: 600px !important;
-        font-size: 15px !important;
-        line-height: 20px !important;
+        width: 100% !important;
     }
     .ui-standard>.center>*>*{
-        width: 600px !important;
-        font-size: 15px !important;
-        line-height: 20px !important;
+        width: 100% !important;
     }
 }

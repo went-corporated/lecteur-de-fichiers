@@ -1,4 +1,6 @@
 // let firstClick = false;
+let indexPhpPath = '../index.php'
+let polsenbPhpPath = './polsenb.php'
 
 // function toggleFile(path) {
 //     if (firstClick === true) {
