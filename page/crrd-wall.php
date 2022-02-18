@@ -31,7 +31,8 @@
             <div style="margin: 0; padding: 0; width: 100%; height: max-content; display: flex; flex-flow: row; justify-content: center; overflow: visible;">
                 <div class="modern-box" style="margin-left: 50px;">
                     <img src="../img/timera.png">
-                    <p id="remaining-time-conseil-général-crrd" class="big"></p>
+                    <!-- <p id="remaining-time-conseil-général-crrd" class="big"></p> -->
+                    <p class="big">Date non fixée</p>
                 </div>
                 <div class="modern-box">
                     <img src="../img/world.png">
