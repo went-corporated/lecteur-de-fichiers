@@ -172,12 +172,58 @@ body{
 
 .new-box>.title{
     margin: 0; padding: 0;
-    margin-top: 15px; margin-bottom: 15px;
+    margin-top: 20px;
     font-family: 'Source Sans Pro SemiBold';
     text-align: left;
     font-size: 25px;
     text-indent: 22.5px;
     color: black;
+}
+
+.new-box>.content{
+    margin: 0; padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro';
+    text-align: justify;
+    hyphens: auto;
+    line-height: 24px;
+    font-size: 17px;
+    padding-left: 22.5px; padding-right: 22.5px;
+    color: black;
+}
+
+.modern-box{
+    width: 375px;
+    height: 150px;
+    margin: 0; padding: 0;
+    margin-top: 25px;
+    /* margin-left: auto; margin-right: auto; */
+    margin-right: 50px;
+    padding-right: 25px;
+    background-color: rgb(254, 254, 254);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.modern-box>img{
+    margin: 0; padding: 0;
+    margin-left: 25px;
+    width: 100px !important;
+    min-width: 100px !important;
+    pointer-events: none;
+}
+
+.modern-box>.big{
+    margin: 0; padding: 0;
+    margin-left: 25px;
+    color: blueviolet;
+    font-size: 28px;
+    font-family: 'Source Sans Pro SemiBold';
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .ui-standard>.center{
@@ -332,7 +378,7 @@ body{
     .ui-standard{
         left: 0;
         width: 100%;
-        padding-left: 5px; padding-right: 5px;
+        padding-left: 10px; padding-right: 10px;
     }
     .ui-standard>.center>*{
         width: 100% !important;

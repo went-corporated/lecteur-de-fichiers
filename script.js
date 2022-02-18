@@ -1,5 +1,6 @@
 // let firstClick = false;
 let indexPhpPath = '../index.php'
+let crrdwallPhpPath = './crrd-wall.php'
 let polsenbPhpPath = './polsenb.php'
 
 // function toggleFile(path) {

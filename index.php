@@ -20,9 +20,14 @@
         <?php require './component/menu-bar.html'; ?>
 
         <div class="ui-standard">
-            <!-- <div class="new-box">
-                <p class="title">Fichier le plus récent</p>
-            </div> -->
+            <div class="new-box">
+                <p class="title">Evénement</p>
+                <p class="content">
+                    Assistez à l'événement de la semaine prochaine, le Conseil Général de la C.R.R.D., qui se tiendra sur le serveur Coral
+                    de NationsGlory aux coordonnées suivantes : 3546 ; -1556. Si vous le ratez, vous pourrez toutefois lire le compte-rendu qui
+                    sera publié quelques jours après l'événement.
+                </p>
+            </div>
             <div class="center"></div>
         </div>
 
@@ -35,6 +40,7 @@
     <script src="./script.js"></script>
     <script>
         indexPhpPath = './index.php';
+        crrdwallPhpPath = './page/crrd-wall.php';
         polsenbPhpPath = './page/polsenb.php';
     </script>
 </body>
