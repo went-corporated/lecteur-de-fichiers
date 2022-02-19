@@ -21,12 +21,13 @@
 
         <div class="ui-standard">
             <div class="new-box">
-                <p class="title">Evénement</p>
+                <p class="title">Événement : le Conseil Général de la C.R.R.D.</p>
                 <p class="content">
                     Assistez à l'événement de la semaine prochaine, le Conseil Général de la C.R.R.D., qui se tiendra sur le serveur Coral
                     de NationsGlory aux coordonnées suivantes : 3546 ; -1556. Si vous le ratez, vous pourrez toutefois lire le compte-rendu qui
                     sera publié quelques jours après l'événement.
                 </p>
+                <div class="btn" onclick="location.href = './page/crrd-wall.php';">Page de l'événement</div>
             </div>
             <div class="center"></div>
         </div>

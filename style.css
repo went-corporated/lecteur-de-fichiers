@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url('./font/sans-serif/SourceSansPro-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Black';
+    src: url('./font/sans-serif/SourceSansPro-Black.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Source Sans Pro SemiBold';
+    src: url('./font/sans-serif/SourceSansPro-SemiBold.ttf') format('truetype')
+}
 
 ::-webkit-scrollbar{
     width: 16px;
@@ -32,6 +46,31 @@
 
 body{
     margin: 0; padding: 0;
+}
+
+.btn{
+    position: relative;
+    width: max-content; height: max-content;
+    margin: 0; padding: 0;
+    margin-bottom: 20px;
+    margin-left: 22.5px;
+    padding-top: 10px; padding-bottom: 10px;
+    padding-left: 22.5px; padding-right: 22.5px;
+    line-height: 24px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro SemiBold';
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+    border-radius: 8px;
+    display: flex;
+    align-items: center; justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: blue;
 }
 
 .ui-controller{
@@ -84,66 +123,28 @@ body{
 .btn-bar{
     position: fixed;
     bottom: 0; left: 0;
-    height: 35px;
+    height: 50px;
     width: 250px;
     margin: 0; padding: 0;
     overflow-y: hidden;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
     background: linear-gradient(90deg, white 90%, rgb(250, 250, 250));
     display: flex;
-    flex-flow: row;
-    z-index: 9;
-}
-
-.btn-btnbar{
-    height: 35px; width: 35px;
-    margin: 0; padding: 0;
-    /* margin-left: auto; margin-right: auto; */
-    display: flex;
     align-items: center; justify-content: center;
+    z-index: 9;
     cursor: pointer;
 }
-.btn-btnbar::after{
-    content: 'Paramètres';
-    position: fixed;
-    width: max-content;
-    height: max-content;
-    margin: 0; padding: 0;
-    padding-top: 7.5px; padding-bottom: 7.5px;
-    padding-left: 12.5px; padding-right: 12.5px;
-    transform: translateY(-40px) translateX(40px);
-    background-color: rgb(174, 95, 248);
-    color: white;
-    border-radius: 4px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);
+.btn-bar:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: black;
+    text-decoration-thickness: 1px;
+}
+
+.btn-bar>img{
     pointer-events: none;
-    opacity: 0;
-    animation: btnBtnbarClose 10s forwards;
-    animation-delay: 1s;
-}
-
-@keyframes btnBtnbarClose{
-    from{
-        opacity: 0;
-    }
-    10%{
-        opacity: 1;
-    }
-    90%{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-}
-
-.btn-btnbar>svg{
-    height: 90%; width: 90%;
-    margin: 0; padding: 0;
-    pointer-events: none;
-}
-
-.btn-btnbar>svg>path{
-    fill: black;
+    height: 30px;
 }
 
 .ui-standard{
@@ -193,6 +194,16 @@ body{
     color: black;
 }
 
+.modernbox-container{
+    width: 100%;
+    height: max-content;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    overflow: visible;
+}
+
 .modern-box{
     width: 375px;
     height: 150px;
@@ -201,11 +212,16 @@ body{
     /* margin-left: auto; margin-right: auto; */
     margin-right: 50px;
     padding-right: 25px;
-    background-color: rgb(254, 254, 254);
+    background-color: white;
     border-radius: 4px;
     display: flex;
     align-items: center;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
+    transition: .3s;
+    cursor: pointer;
+}
+.modern-box:hover{
+    background-color: rgb(240, 240, 240);
 }
 
 .modern-box>img{
@@ -234,11 +250,11 @@ body{
 }
 
 .ui-standard>.center>*{
-    width: 800px !important;
+    width: 800px;
     margin-left: auto !important; margin-right: auto !important;
 }
 .ui-standard>.center>*>*{
-    width: 800px !important;
+    width: 800px;
     margin-left: auto !important; margin-right: auto !important;
 }
 
@@ -310,9 +326,22 @@ body{
     backdrop-filter: blur(4px);
     border: 2px solid rgb(240, 240, 240);
     border-radius: 8px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .035);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
     z-index: 1000;
+    animation: settingsModal .3s;
+    transition: .3s;
     display: none;
+}
+
+@keyframes settingsModal {
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .settings-modal>.title{
@@ -364,11 +393,22 @@ body{
     top: 0; left: 0;
     width: 100%; height: 100%;
     margin: 0; padding: 0;
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .3);
     backdrop-filter: blur(20px);
     z-index: 900;
     cursor: pointer;
+    animation: mask .3s;
+    transition: .3s;
     display: none;
+}
+
+@keyframes mask {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -385,5 +425,33 @@ body{
     }
     .ui-standard>.center>*>*{
         width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .new-box{
+        width: 600px;
+    }
+    .modernbox-container{
+        width: 600px;
+        height: max-content;
+        margin: 0; padding: 0;
+        margin-left: auto; margin-right: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        overflow: visible;
+    }
+    .modern-box{
+        width: 100%;
+        margin: 0; padding: 0;
+        margin-left: 0 !important; margin-right: 0 !important;
+        margin-top: 25px;
+    }
+    .ui-standard>.center>*{
+        width: 600px;
+    }
+    .ui-standard>.center>*>*{
+        width: 600px;
     }
 }

@@ -50,9 +50,19 @@ function toggleSetting(settingName) {
 document.getElementById('openSettingsModal').onclick = function () {
     document.querySelector('.mask').style.display = 'block';
     document.querySelector('.settings-modal').style.display = 'block';
+    document.querySelector('.mask').style.opacity = '1';
+    document.querySelector('.settings-modal').style.opacity = '1';
+    document.querySelector('.settings-modal').style.transform = 'translateY(0px)';
 }
 
 document.querySelector('.mask').onclick = function () {
+    document.querySelector('.mask').style.opacity = '0';
+    document.querySelector('.settings-modal').style.opacity = '0';
+    document.querySelector('.settings-modal').style.transform = 'translateY(10px)';
+    setTimeout("dnoneMaskAndSettingsmodal()", 300);
+}
+
+function dnoneMaskAndSettingsmodal(){
     document.querySelector('.mask').style.display = 'none';
     document.querySelector('.settings-modal').style.display = 'none';
 }

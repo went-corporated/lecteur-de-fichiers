@@ -26,9 +26,13 @@
         <div class="ui-standard">
             <div class="new-box">
                 <p class="title">Le Conseil Général</p>
-                <p class="content">Le prochain événement se tiendra en Asie dans la salle de Conseil de la C.R.R.D. sur le serveur Coral.</p>
+                <p class="content">
+                    Assistez à l'événement de la semaine prochaine, le Conseil Général de la C.R.R.D., qui se tiendra sur le serveur Coral
+                    de NationsGlory aux coordonnées suivantes : 3546 ; -1556. Si vous le ratez, vous pourrez toutefois lire le compte-rendu qui
+                    sera publié quelques jours après l'événement.
+                </p>
             </div>
-            <div style="margin: 0; padding: 0; width: 100%; height: max-content; display: flex; flex-flow: row; justify-content: center; overflow: visible;">
+            <div class="modernbox-container">
                 <div class="modern-box" style="margin-left: 50px;">
                     <img src="../img/timera.png">
                     <!-- <p id="remaining-time-conseil-général-crrd" class="big"></p> -->
