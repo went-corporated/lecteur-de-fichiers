@@ -20,7 +20,16 @@
         <?php require './component/menu-bar.html'; ?>
 
         <div class="ui-standard">
+
             <div class="new-box">
+                <p class="title">Nouveau paramètre !</p>
+                <p class="content">
+                    Un paramètre vient d'être codé : désactiver les ombres. Il est cependant inutile.🙃
+                </p>
+                <div class="btn" onclick="openSettingsModal();">Ouvrir les paramètres</div>
+            </div>
+
+            <!-- <div class="new-box">
                 <p class="title">Événement : le Conseil Général de la C.R.R.D.</p>
                 <p class="content">
                     Assistez à l'événement de la semaine prochaine, le Conseil Général de la C.R.R.D., qui se tiendra sur le serveur Coral
@@ -28,8 +37,10 @@
                     sera publié quelques jours après l'événement.
                 </p>
                 <div class="btn" onclick="location.href = './page/crrd-wall.php';">Page de l'événement</div>
-            </div>
+            </div> -->
+
             <div class="center"></div>
+
         </div>
 
         <div class="mask"></div>

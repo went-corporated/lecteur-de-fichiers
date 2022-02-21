@@ -31,23 +31,38 @@ let polsenbPhpPath = './polsenb.php'
 
 // readTextFile('l-europe-entre-restauration-et-revolution');
 
-let toggleSettingThemeIncator = false;
+let toggleSettingShadowsIncator = false;
+
+if (localStorage.getItem('settingitem-deactivateshadows') === 'true') {
+    document.getElementById('sb_ta_cb_deactivateshadows').style.transform = 'translateX(35px)';
+    document.getElementById('sb_ta_cb_deactivateshadows').style.backgroundColor = 'white';
+    document.querySelectorAll('*').forEach(function (element) {
+        element.style.boxShadow = 'none';
+    });
+    toggleSettingShadowsIncator = true;
+}
 
 function toggleSetting(settingName) {
-    if (settingName === "theme") {
-        if (toggleSettingThemeIncator === false) {
-            document.getElementById('sb_ta_cb_theme').style.transform = 'translateX(35px)';
-            document.getElementById('sb_ta_cb_theme').style.backgroundColor = 'white';
-            toggleSettingThemeIncator = true;
+    if (settingName === "deactivateshadows") {
+        if (toggleSettingShadowsIncator === false) {
+            document.getElementById('sb_ta_cb_deactivateshadows').style.transform = 'translateX(35px)';
+            document.getElementById('sb_ta_cb_deactivateshadows').style.backgroundColor = 'white';
+            document.querySelectorAll('*').forEach(function(element) {
+                element.style.boxShadow = 'none';
+            });
+            toggleSettingShadowsIncator = true;
+            localStorage.setItem('settingitem-deactivateshadows', 'true');
         } else {
-            document.getElementById('sb_ta_cb_theme').style.transform = 'translateX(0px)';
-            document.getElementById('sb_ta_cb_theme').style.backgroundColor = 'rgb(245, 245, 245)';
-            toggleSettingThemeIncator = false;
+            document.getElementById('sb_ta_cb_deactivateshadows').style.transform = 'translateX(0px)';
+            document.getElementById('sb_ta_cb_deactivateshadows').style.backgroundColor = 'rgb(245, 245, 245)';
+            toggleSettingShadowsIncator = false;
+            localStorage.setItem('settingitem-deactivateshadows', 'false');
+            location.href = location.href;
         }
     }
 }
 
-document.getElementById('openSettingsModal').onclick = function () {
+function openSettingsModal() {
     document.querySelector('.mask').style.display = 'block';
     document.querySelector('.settings-modal').style.display = 'block';
     document.querySelector('.mask').style.opacity = '1';
@@ -69,3 +84,17 @@ function dnoneMaskAndSettingsmodal(){
 
 // readTextFile('plan-officiel-de-lancement-du-systeme-economique-de-la-nouvelle-birmanie');
 // firstClick = true;
+
+function displayBiography(element, textContainerId, bioBoxId){
+    if (element.classList.contains('toReduce') === false){
+        document.getElementById(textContainerId).style.height = 'max-content';
+        document.getElementById(bioBoxId).style.height = 'max-content';
+        element.innerHTML = 'Masquer la biographie';
+        element.classList.add('toReduce');
+    } else {
+        document.getElementById(textContainerId).style.height = '100px';
+        document.getElementById(bioBoxId).style.height = '211.5px';
+        element.innerHTML = 'Afficher la biographie';
+        element.classList.remove('toReduce');
+    }
+}

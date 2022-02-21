@@ -70,7 +70,7 @@ body{
     transition: .3s;
 }
 .btn:hover{
-    background-color: blue;
+    background-color: rgb(0, 0, 209);
 }
 
 .ui-controller{
@@ -168,6 +168,7 @@ body{
     margin-left: auto; margin-right: auto;
     background-color: rgb(240, 240, 240);
     border-radius: 4px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .15);
     /* border: 1px dashed red; */
 }
 
@@ -181,7 +182,7 @@ body{
     color: black;
 }
 
-.new-box>.content{
+.new-box>.content, .new-box>.content>*{
     margin: 0; padding: 0;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -192,6 +193,14 @@ body{
     font-size: 17px;
     padding-left: 22.5px; padding-right: 22.5px;
     color: black;
+}
+
+.new-box>.content>*{
+    padding: 0;
+}
+
+.new-box>.content>.bared{
+    text-decoration: line-through 1px;
 }
 
 .modernbox-container{
@@ -240,6 +249,89 @@ body{
     font-family: 'Source Sans Pro SemiBold';
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+
+.bio-box{
+    width: 800px;
+    height: 211.5px;
+    margin: 0; padding: 0;
+    margin-top: 25px;
+    margin-left: auto; margin-right: auto;
+    padding: 22.5px;
+    /* background-color: rgb(128, 195, 240); */
+    border: 2px solid rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .035);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.bio-box>.pdp{
+    width: 100px; height: 100px;
+    margin: 0; padding: 0;
+    pointer-events: none;
+    background: url('./img/crrd-go.jpg') center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .15);
+}
+
+.badge-container{
+    max-width: 100px;
+    width: 100px;
+    height: max-content;
+    margin: 0; padding: 0;
+    transform: translateY(22.5px);
+    /* border: 1px dashed red; */
+    overflow: visible;
+}
+
+.badge-container>.badge{
+    width: 100%;
+    height: 27.5px;
+    margin: 0; padding: 0;
+    background-color: rgb(90, 214, 52);
+    /* box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1); */
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Source Sans Pro SemiBold';
+    display: flex;
+    align-items: center; justify-content: center;
+}
+
+.bio-box>.text-container{
+    width: 632.5px;
+    height: 100px;
+    margin: 0; padding: 0;
+    margin-top: -100px;
+    margin-left: 122.5px;
+    transition: .3s;
+}
+
+.bio-box>.text-container>.name{
+    margin: 0; padding: 0;
+    font-family: 'Source Sans Pro SemiBold';
+    text-align: left;
+    font-size: 25px;
+    color: black;
+}
+
+.bio-box>.text-container>.autobiography{
+    margin: 0; padding: 0;
+    margin-top: 10px;
+    font-family: 'Source Sans Pro';
+    text-align: justify;
+    hyphens: auto;
+    line-height: 24px;
+    font-size: 17px;
+    color: black;
+}
+
+.bio-box>.btn{
+    margin-top: 22.5px;
+    margin-bottom: 0;
+    margin-left: 122.5px;
 }
 
 .ui-standard>.center{
@@ -447,6 +539,12 @@ body{
         margin: 0; padding: 0;
         margin-left: 0 !important; margin-right: 0 !important;
         margin-top: 25px;
+    }
+    .bio-box{
+        width: 600px;
+    }
+    .bio-box>.text-container{
+        width: 432.5px;
     }
     .ui-standard>.center>*{
         width: 600px;
