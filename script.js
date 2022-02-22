@@ -38,6 +38,9 @@ if (localStorage.getItem('settingitem-deactivateshadows') === 'true') {
     document.getElementById('sb_ta_cb_deactivateshadows').style.backgroundColor = 'white';
     document.querySelectorAll('*').forEach(function (element) {
         element.style.boxShadow = 'none';
+        element.style.backdropFilter = 'blur(0px)';
+        document.body.style.backdropFilter = '';
+        document.querySelector('.menu-bar').style.backdropFilter = '';
     });
     toggleSettingShadowsIncator = true;
 }
@@ -49,6 +52,9 @@ function toggleSetting(settingName) {
             document.getElementById('sb_ta_cb_deactivateshadows').style.backgroundColor = 'white';
             document.querySelectorAll('*').forEach(function(element) {
                 element.style.boxShadow = 'none';
+                element.style.backdropFilter = 'blur(0px)';
+                document.body.style.backdropFilter = '';
+                document.querySelector('.menu-bar').style.backdropFilter = '';
             });
             toggleSettingShadowsIncator = true;
             localStorage.setItem('settingitem-deactivateshadows', 'true');
