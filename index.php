@@ -22,9 +22,9 @@
         <div class="ui-standard">
 
             <div class="new-box">
-                <p class="title">Nouveau paramètre !</p>
+                <p class="title">Vous êtes sur Firefox ?</p>
                 <p class="content">
-                    Un paramètre vient d'être codé : désactiver les ombres. Il est cependant inutile.🙃
+                    Activez le paramètre « Je suis sur Firefox » dans les paramètres.
                 </p>
                 <div class="btn" onclick="openSettingsModal();">Ouvrir les paramètres</div>
             </div>
@@ -52,6 +52,7 @@
     <script src="./script.js"></script>
     <script>
         indexPhpPath = './index.php';
+        lunionPhpPath = './page/lunion.php';
         crrdwallPhpPath = './page/crrd-wall.php';
         polsenbPhpPath = './page/polsenb.php';
     </script>

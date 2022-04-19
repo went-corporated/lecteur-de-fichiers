@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mur de la C.R.R.D. · Shymedhve</title>
+    <title>GURK · Shymedhve</title>
     <!-- <?php require '../component/open-graph.html'; ?> -->
     <meta property="og:url" content="https://stage3.abeille.com/shymedhve/page/crrd-wall.php">
     <meta property="og:image" content="https://stage3.abeille.com/shymedhve/img/crrd-go.jpg">
@@ -28,10 +28,11 @@
             <div id="crrdBioBox" class="bio-box" style="height: max-content;">
                 <div class="pdp"></div>
                 <div class="badge-container">
-                    <div class="badge">Certifiée</div>
+                    <div class="badge darkbadge">😎 Certifiée</div>
+                    <div class="badge darkbadge">👍 Utile</div>
                 </div>
-                <div id="crrdTextContainer" class="text-container" style="height: max-content; margin-top: -130px;">
-                    <p class="name">La C.R.R.D.</p>
+                <div id="crrdTextContainer" class="text-container" style="height: max-content; margin-top: -165px;">
+                    <p class="name">GURK</p>
                     <p class="autobiography">
                         La Coopération Révolutionnaire pour une République Démocratique régit les sans-pays qui ont adhérés
                         et leur fournit des espaces alloués à l'exploitation agricole, des outils, des armes et au final une
@@ -46,7 +47,7 @@
             </div>
 
             <div class="new-box">
-                <p class="title">Le Conseil Général</p>
+                <p class="title">Points de participation</p>
                 <p class="content">
                     Assistez à l'événement <span class="bared">de la semaine prochaine</span>, le Conseil Général de la C.R.R.D., qui se tiendra sur le serveur Coral
                     de NationsGlory aux coordonnées suivantes : 3546 ; -1556. Si vous le ratez, vous pourrez toutefois lire le compte-rendu qui
@@ -58,8 +59,8 @@
 
                 <div class="modern-box" style="margin-left: 50px;">
                     <img src="../img/timera.png">
-                    <!-- <p id="remaining-time-conseil-général-crrd" class="big"></p> -->
-                    <p class="big" style="color: red;">Reporté</p>
+                    <p id="remaining-time-conseil-général-crrd" class="big"></p>
+                    <!-- <p class="big" style="color: red;">Reporté</p> -->
                 </div>
 
                 <div class="modern-box">
@@ -80,9 +81,9 @@
     </div>
 
     <script src="../script.js"></script>
-    <!--<script>
+    <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Feb 18, 2022 19:8:10").getTime();
+        var countDownDate = new Date("Mar 17, 2022 0:0:0").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -120,6 +121,6 @@
             document.getElementById("remaining-time-conseil-général-crrd").innerHTML = "Le Conseil a commencé";
         }
         }, 1000);
-    </script>-->
+    </script>
 </body>
 </html>

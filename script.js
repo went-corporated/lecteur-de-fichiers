@@ -1,5 +1,6 @@
 // let firstClick = false;
 let indexPhpPath = '../index.php'
+let lunionPhpPath = './lunion.php'
 let crrdwallPhpPath = './crrd-wall.php'
 let polsenbPhpPath = './polsenb.php'
 
@@ -56,6 +57,7 @@ function toggleSetting(settingName) {
                 document.body.style.backdropFilter = '';
                 document.querySelector('.menu-bar').style.backdropFilter = '';
             });
+            alert('Firefox n\'est pas compatible avec :\n- Le filtre de flou\n- La customization de la scrollbar\n- Firefox ne protège pas votre vie privée, car vous utilisez Google, et le renard roux est payé pour ce service\n\nChrome est le pionnier ! Utilisez-le !');
             toggleSettingShadowsIncator = true;
             localStorage.setItem('settingitem-deactivateshadows', 'true');
         } else {
